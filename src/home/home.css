@@ -1,0 +1,220 @@
+#CDSWIDSSP
+{
+	width: 100% !important;
+}
+.submenu{
+	width: 300px !important;
+	background-color: rgba(0, 0, 0, 1) !important;
+}
+
+
+.blog-cap{
+	background:#fff;
+	padding:37px 129px 37px 50px;
+	border:1px solid #f7f7f7;
+	border-top:0;
+	-webkit-transition:.4s;
+	-moz-transition:.4s;
+	-o-transition:.4s;
+	transition:.4s
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	.blog-cap{
+		padding:37px 23px 37px 45px
+	}
+}
+@media only screen and (min-width: 576px) and (max-width: 767px)
+{
+	.blog-cap{
+		padding:19px 8px 17px 18px
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.blog-cap{
+		padding:19px 8px 17px 18px
+	}
+}
+@media (max-width: 575px){
+	.blog-cap{
+		padding:19px 8px 17px 18px
+	}
+}
+.blog-cap p
+{
+	color:#707b8e
+}
+.blog-cap h3 a
+{
+	color:#191d34;font-size:24px;font-weight:700;line-height:1.4;margin-bottom:20px;display:block;text-transform:uppercase
+}
+.blog-cap h3 a:hover{
+	color:#d19f68
+}
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+	.blog-cap h3 a{
+		font-size:19px
+	}
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+	.blog-cap h3 a{
+		font-size:19px
+	}
+}
+@media (max-width: 575px)
+{
+	.blog-cap h3 a{
+		font-size:19px
+	}
+}
+.home-blog-single:hover .blog-img-cap .blog-img img
+{
+	-webkit-transform:scale(1.04);-moz-transform:scale(1.04);-ms-transform:scale(1.04);transform:scale(1.04)
+}
+.home-blog-single:hover .blog-img-cap .blog-cap{
+	border:1px solid #d19f68;border-top:0
+}
+
+
+.more-btn{
+	color:#3a3a3a;
+	text-transform:uppercase;
+	font-size:14px;
+	font-family:"Oswald",sans-serif;
+	color:#3a3a3a;
+}
+.more-btn:hover{
+	color:#014b85;
+}
+
+.home-blog-area .home-blog-single{
+	-webkit-transition:.4s;
+	-moz-transition:.4s;
+	-o-transition:.4s;
+	transition:.4s
+}
+.blog-img{
+	overflow:hidden;
+	position:relative
+}
+.blog-img img{ 
+	width:100%;
+	-webkit-transform:scale 1;
+	-moz-transform:scale 1;
+	-ms-transform:scale 1;
+	transform:scale 1;
+	transition:all 0.5s ease-out 0s
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+	.home-blog-area .home-blog-single .blog-img-cap .blog-img .blog-date{
+		padding:8px 20px
+	}
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+	.home-blog-area .home-blog-single .blog-img-cap .blog-img .blog-date{
+		padding:8px 20px
+	}
+}
+@media (max-width: 575px){
+	.home-blog-area .home-blog-single .blog-img-cap .blog-img .blog-date{
+		padding:8px 20px
+	}
+}
+
+@media screen and (max-width: 992px)
+{
+	.submenu{
+		width: 300px !important;
+		background-color: rgba(255, 255, 255, 1) !important;
+	}
+}
+@media screen and (max-width: 600px)
+{
+	.carousel-item
+	{
+		overflow: hidden;
+	}
+	.carousel-img
+	{
+		height:450px;
+		object-fit:cover;
+	}
+}
+
+
+.services-caption{
+	background:#f8f8f8;
+	padding:84px 45px 56px;
+	border-radius:7px;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-o-transition:.5s;
+	transition:.5s
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	.service-area .services-caption{
+		padding:84px 25px 56px
+	}
+}
+
+.service-cap h4 a{
+	font-size:24px;
+	font-weight:700;
+	line-height:1.2;
+	margin-bottom:27px;
+	display:inline-block
+}
+.service-cap h4 a:hover{
+	color:#d19f68
+}
+.services-caption:hover .service-icon::before{
+	right:-32px
+}
+.services-caption:hover .service-icon i
+{
+	background:#d19f68
+}
+
+.service-icon{
+	display:inline-block;position:relative
+}
+.service-icon::before{
+	content:"";
+	background-image: url(http://localhost:3000/assets/img/gallery/dot.png);
+	width:80px;
+	height:135px;
+	position:absolute;
+	right:-29px;
+	top:-35px;
+	z-index:0;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-o-transition:.5s;
+	transition:.5s
+}
+ .service-icon i{
+	position:relative;
+	color:#fff;
+	font-size:40px;
+	height:105px;
+	width:105px;
+	display:block;line-height:105px;text-align:center;background:#1d2434;margin-bottom:42px;-webkit-transition:.5s;-moz-transition:.5s;-o-transition:.5s;transition:.5s
+}
+ .service-cap h4 a{
+	font-size:24px;
+	font-weight:700;
+	line-height:1.2;
+	margin-bottom:27px;display:inline-block
+}
+.service-area .services-caption .service-cap h4 a:hover
+{
+	color:#d19f68
+}
+.services-caption:hover .service-icon::before
+{
+	right:-32px
+}
+.services-caption:hover .service-icon i{background:#d19f68}
+

@@ -1,0 +1,42 @@
+.mobile_menu{
+    position:absolute;right:0px;width:100%;z-index:99
+}
+.mobile_menu .slicknav_menu{
+    background:transparent;margin-top:0px !important
+}
+.mobile_menu .slicknav_menu .slicknav_btn{
+    top:-36px
+}
+ .slicknav_icon-bar{
+    background-color:#d19f68 !important
+}
+.mobile_menu .slicknav_menu .slicknav_nav{
+    margin-top:16px !important
+}
+.mobile_menu .slicknav_menu .slicknav_nav a:hover{
+    background:transparent;color:#d19f68
+}
+.mobile_menu .slicknav_menu .slicknav_nav a{
+    font-size:15px;padding:7px 10px}
+.mobile_menu .slicknav_menu .slicknav_nav .slicknav_item a{
+        padding:0 !important
+}
+.slicknav_icon-bar{background-color:#d19f68 !important}
+
+.sticky-bar
+{
+    background:#000
+}
+.header-sticky.sticky-bar.sticky .main-menu ul li a{padding:20px 20px !important}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .header-sticky.sticky-bar.sticky
+    {padding:15px 0px}
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .header-sticky.sticky-bar.sticky{padding:15px 0px}
+}
+@media (max-width: 575px){
+    .header-sticky.sticky-bar.sticky{padding:15px 0px}
+}
+.mobile_menu{position:absolute;right:0px;width:100%;z-index:99}
+.mobile_menu .slicknav_menu{background:transparent;margin-top:0px !important}.mobile_menu .slicknav_menu .slicknav_btn{top:-36px} .slicknav_icon-bar{background-color:#d19f68 !important}
