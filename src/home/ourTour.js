@@ -1,4 +1,5 @@
 import React from 'react'
+import {HashLink as Link} from 'react-router-hash-link'
 
 import {OurTourList} from './data/ourTour'
 const App = () => {
@@ -64,8 +65,8 @@ const App = () => {
                                             </div>
                                         </div>
                                         <div className="blog-cap">
-                                            <h3><a href="city_walking_tour">{value.title}</a></h3>
-                                            <a href="city_walking_tour" className="more-btn">Explore »</a>
+                                            <h3><Link to={value.exploreLink}>{value.title}</Link></h3>
+                                            <Link to={value.exploreLink} className="more-btn">Explore »</Link>
                                         </div>
                                     </div>
                                 </div>

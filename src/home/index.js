@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDom from 'react-dom'
 
 import Carousel from './carousel.js'
 import About from './about.js'
@@ -13,6 +12,12 @@ import './home.css'
 
 
 class  App extends React.Component{
+    constructor() {
+        super();
+        document.getElementsByTagName("body")[0].onscroll = function() {
+
+        }
+    }
     render () {
         return (
             <>
@@ -41,8 +46,9 @@ class  App extends React.Component{
 
     scrollAction = () => {
         const nav = NavLinksDOM();
+        this.removeClass(nav);
         nav.home.classList.add("active");	
-        document.getElementsByTagName('body')[0].onscroll = function() {
+        document.getElementsByTagName('body')[0].onscroll = () => {
             var y_scroll_pos = window.pageYOffset;
             
             var about = document.getElementById("about").offsetTop;
@@ -72,13 +78,10 @@ class  App extends React.Component{
         }
     }
     
-    ScrollController = () => {
-        
-    }    
-
     removeClass(nav) {
         nav.home.classList.remove("active");
         nav.about.classList.remove("active");
+        nav.tour.classList.remove("active");
         nav.booking.classList.remove("active");
         nav.contact.classList.remove("active");
     }

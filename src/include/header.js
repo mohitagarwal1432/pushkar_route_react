@@ -1,8 +1,6 @@
 import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 
-import { ScrollController } from "../home/index";
-
 import './header.css'
 
 class Header extends React.Component {
@@ -23,9 +21,9 @@ class Header extends React.Component {
                                     <div className="main-menu f-right d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">
-                                                <li id="homeNav"><Link to="/index#home">Home</Link></li>
-                                                <li id="aboutNav"><Link to="/index#about">About</Link></li>
-                                                <li id="tourNav"><a>Tours</a>
+                                                <li id="homeNav"><Link to="/#home">Home</Link></li>
+                                                <li id="aboutNav"><Link to="/#about">About</Link></li>
+                                                <li id="tourNav"><Link to="">Tours</Link>
                                                     <ul className="submenu">
                                                         <li><Link to="/city_walking_tour">City walking tour</Link></li>
                                                         <li><Link to="/evening_walking_tour">Evening walking tour</Link></li>
@@ -40,12 +38,12 @@ class Header extends React.Component {
                                                 </li>
                                                 <li id="bookingNav"><Link to="/index#booking">Booking</Link></li>
 
-                                                <li id="contactNav"><Link to="/#contact">Contact</Link></li>
+                                                <li id="contactNav"><Link to="#contact">Contact</Link></li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <div className="header-right-btn f-right d-none d-lg-block ml-30">
-                                        <a href="https://www.tripadvisor.com/Attraction_Review-g319729-d17548354-Reviews-VISHWNATH_PARASHAR-Pushkar_Ajmer_District_Rajasthan.html" className="btn header-btn" target="_blank">Enquire Now</a>
+                                        <a href="https://www.tripadvisor.com/Attraction_Review-g319729-d17548354-Reviews-VISHWNATH_PARASHAR-Pushkar_Ajmer_District_Rajasthan.html" className="btn header-btn" target="_blank" rel="noopener noreferrer">Enquire Now</a>
                                     </div>
                                 </div>
                             </div>   

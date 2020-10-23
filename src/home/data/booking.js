@@ -1,7 +1,7 @@
 export const BookingList = [
 	{
 		icon: "fas fa-bicycle",
-		title: "Cycle Tours"
+		title: "Cycle Tours",
 	},
 	{
 		icon: "fas fa-utensils",

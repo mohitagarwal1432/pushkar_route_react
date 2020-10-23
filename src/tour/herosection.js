@@ -5,11 +5,7 @@ class App extends React.Component {
     render() {
         var id = this.props.params.id;
         
-        var HeroFound = HeroSectionData.find((hero) => {
-            if(hero.id == id){
-                return hero;
-            }
-        })
+        var HeroFound = HeroSectionData.find((hero) => hero.id === id)
 
         return (
             <div className="slider-area2">

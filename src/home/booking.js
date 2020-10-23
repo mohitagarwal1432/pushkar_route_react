@@ -1,4 +1,5 @@
 import React from 'react'
+import {HashLink as Link} from 'react-router-hash-link'
 
 import {BookingList} from './data/booking.js' 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
                                 <i className={value.icon}></i>
                             </div> 
                             <div className="service-cap">
-                                <h4><a href="#">{value.title}</a></h4>
+                                <h4><Link to="">{value.title}</Link></h4>
                             </div>
                         </div>
                     </div>

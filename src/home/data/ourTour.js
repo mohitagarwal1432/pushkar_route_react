@@ -6,7 +6,7 @@ export const OurTourList = [
 			"./photos/city_walking_tour/3.jpg"
 		],
 		title: "City Walking Tour",
-		exploreLink: ""
+		exploreLink: "city_walking_tour"
 	},
 
 	{
@@ -16,7 +16,7 @@ export const OurTourList = [
 			"./photos/evening_walking_tour/3.jpg"
 		],
 		title: "Evening Walking Tour",
-		exploreLink: ""
+		exploreLink: "evening_walking_tour"
 	},
 
 	{
@@ -26,7 +26,7 @@ export const OurTourList = [
 			"./photos/half_day_tour/3.jpg"
 		],
 		title: "Half Day Tour",
-		exploreLink: ""
+		exploreLink: "half_day_tour"
 	},
 
 	{
@@ -36,7 +36,7 @@ export const OurTourList = [
 			"./photos/camel_safari/3.jpg"
 		],
 		title: "Camel Safari, Jeep Safari and Quad Biking",
-		exploreLink: ""
+		exploreLink: "camel_safari_jeep_safari_and_quad_biking"
 	},
 
 	{

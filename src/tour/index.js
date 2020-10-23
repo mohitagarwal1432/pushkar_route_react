@@ -1,5 +1,5 @@
-import React from "react"
-import {Link, useParams, withRouter} from 'react-router-dom'
+import React, {useEffect} from "react"
+import {useParams, withRouter} from 'react-router-dom'
 
 import {HeroSectionData} from './data/herosection'
 
@@ -10,6 +10,69 @@ import Contact from '../include/contact.js'
 
 import {NavLinksDOM} from '../include/header'
 
+const App = () => {
+    window.scrollTo(0, 0);
+    document.getElementsByTagName("body")[0].onscroll = function() {
+
+    }
+    var params = useParams();
+    var id = params.id;
+    
+    var HeroFound = HeroSectionData.find((hero) => hero.id === id)
+
+    useEffect(() => {
+        const NavLinks = NavLinksDOM();
+        scrollAction(NavLinks)
+    }, [])
+
+    if(HeroFound) {
+        return (
+            <>
+                <HeroSection params={params}/>
+                <AboutSection params={params}/>
+                <section id="contact" className="service-area section-padding3">
+                    <Contact />
+                </section>
+            </>
+        );
+    }
+    else {
+        return (
+            <ErrorSection />
+        );
+    }
+
+    
+}
+
+const scrollAction = (nav) => {
+    removeClass(nav);
+    nav.tour.classList.add("active");	
+    document.getElementsByTagName('body')[0].onscroll = () => {
+        var y_scroll_pos = window.pageYOffset;
+        var contact = document.getElementById("contact").offsetTop;
+        if(y_scroll_pos>contact-20)
+        {
+            removeClass(nav);
+            nav.contact.classList.add("active");
+        }
+        else {
+            removeClass(nav);
+            nav.tour.classList.add("active");
+        }
+    }
+}
+
+const removeClass = (nav) => {
+    nav.home.classList.remove("active");
+    nav.about.classList.remove("active");
+    nav.tour.classList.remove("active");
+    nav.booking.classList.remove("active");
+    nav.contact.classList.remove("active");
+}
+
+
+export default withRouter(App);
 
 // class App extends React.Component {
 //     constructor(props) {
@@ -56,40 +119,3 @@ import {NavLinksDOM} from '../include/header'
 //         }
 //     }
 //}
-
-const App = () => {
-    window.scrollTo(0, 0);
-    document.getElementsByTagName("body")[0].onscroll = function() {
-
-    }
-    var params = useParams();
-    var id = params.id;
-    
-    var HeroFound = HeroSectionData.find((hero) => {
-        if(hero.id == id){
-            return hero;
-        }
-    })
-
-    if(HeroFound) {
-        return (
-            <>
-                <HeroSection params={params}/>
-                <AboutSection params={params}/>
-                <section id="contact" className="service-area section-padding3">
-                    <Contact />
-                </section>
-            </>
-        );
-    }
-    else {
-        return (
-            <ErrorSection />
-        );
-    }
-
-    
-}
-
-
-export default withRouter(App);

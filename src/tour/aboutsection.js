@@ -56,11 +56,7 @@ class App extends React.Component {
     render() {
         var id = this.props.params.id;
         
-        var Found = AboutSectionData.find((hero) => {
-            if(hero.id == id){
-                return hero;
-            }
-        })
+        var Found = AboutSectionData.find((hero) => hero.id === id)
         var CarouselList = Found.CarouselList;
         return (
             <section className="about-area section-padding3 position-relative">
