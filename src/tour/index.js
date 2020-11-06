@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import {useParams, withRouter} from 'react-router-dom'
 
 import {HeroSectionData} from './data/herosection'
@@ -20,6 +20,8 @@ const App = () => {
     
     var HeroFound = HeroSectionData.find((hero) => hero.id === id)
 
+    //const [text, setText] = useState('Random Text'); and to update state value on different actions eg: button click |||setText('Hello value changed');||| 
+    
     useEffect(() => {
         const NavLinks = NavLinksDOM();
         scrollAction(NavLinks)
